@@ -1,4 +1,4 @@
-
+import java.util.Scanner;
 public class Task1 {
   public static void main(String[] args) { 
     //A
@@ -8,7 +8,8 @@ public class Task1 {
     System.out.println();
     //B
     int num2 = 80;
-    System.out.println("Sum: " + (num1 + num2));
+    num1 += num2;
+    System.out.println("Sum: " + (num1));
     
     System.out.println();
     //C
@@ -21,7 +22,8 @@ public class Task1 {
     double num4 = 80;
     System.out.println(num3);
     
-    System.out.println("Sum with double: " + (num3 + num4));
+    num3 += num4;
+    System.out.println("Sum with double: " + (num3));
     System.out.println("Product: " + (num3 * num4));
     System.out.println("Division: " + (num3 / num4));
     System.out.println();
@@ -42,6 +44,18 @@ public class Task1 {
     System.out.println();
     
     //G
+    Scanner sc = new Scanner(System.in);
+    System.out.println("Enter input numbers: ");
+    int my_num = sc.nextInt();
+    int my_num2 = sc.nextInt();
+    System.out.println(my_num);
+
+    my_num += my_num2;
+    System.out.println(my_num);
+    sc.close();
+
+
+
     
   }  
 }
