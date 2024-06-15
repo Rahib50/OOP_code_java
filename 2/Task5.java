@@ -2,15 +2,18 @@ import java.util.Scanner;
 public class Task5 {
      public static void main(String[] args) {
           Scanner sc = new Scanner(System.in);
-          double count = 1;
+          double count = 0;
           int zero_count = 0;
-          int inp = sc.nextInt();
-          int max = inp;
-          int min = inp;
-          int sum = inp;
+          int inp = 0;
+          int max = 0;
+          int min = 0;
+          int sum = 0;
           while (zero_count != 3){
                inp = sc.nextInt();
                if(inp != 0){
+                    if(count == 0){
+                         min = inp;
+                    }
                     if(max < inp){
                          max = inp;
                     }
@@ -25,7 +28,11 @@ public class Task5 {
                     zero_count++;
                }
           }
+          if(zero_count == 3){
+               count = 1; //To make sure the Average is not a math error
+          }
 
+          // System.out.println(count);
           System.out.println( "Sum = " + sum);
           System.out.println( "Minimum = " + min);
           System.out.println( "Maximum = " + max);
