@@ -28,15 +28,17 @@ public class Task5 {
                     zero_count++;
                }
           }
-          if(zero_count == 3){
-               count = 1; //To make sure the Average is not a math error
-          }
 
           // System.out.println(count);
-          System.out.println( "Sum = " + sum);
-          System.out.println( "Minimum = " + min);
-          System.out.println( "Maximum = " + max);
-          System.out.println( "Average = " + (sum/count));
+          if(count == 0){
+               System.out.println("No numbers found");
+          }
+          else{
+               System.out.println( "Sum = " + sum);
+               System.out.println( "Minimum = " + min);
+               System.out.println( "Maximum = " + max);
+               System.out.println( "Average = " + (sum/count));
+          }
           sc.close();
      }
 }
