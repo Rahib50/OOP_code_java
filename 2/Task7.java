@@ -7,7 +7,7 @@ public class Task7 {
         int prev = 0, term = 1; //previous term and preset term
 
         //a
-        while(term < inp){
+        while(term <= inp){
             System.out.print(term + " ");
             int temp = term;
             term += prev;
@@ -18,7 +18,7 @@ public class Task7 {
         //b
         prev = 0; term = 1;
         int sum = 0;
-        while(term < inp){
+        while(term <= inp){
             sum += term;
             int temp = term;
             term += prev;
