@@ -4,7 +4,7 @@ public class Task7 {
         Scanner sc = new Scanner(System.in);
         System.out.print("All fibonacci present until: ");
         int inp = sc.nextInt();
-        int prev = 0, term = 1;
+        int prev = 0, term = 1; //previous term and preset term
 
         //a
         while(term < inp){
