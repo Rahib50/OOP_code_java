@@ -1,4 +1,4 @@
-//Array Task6
+//Array Task5
 //FIX
 import java.util.Scanner;
 public class Task11 {
@@ -21,6 +21,7 @@ public class Task11 {
                     count--;
                }
           }
+
           int[] new_arr = new int[count];
           for(int i = 0, j = 0; i < N; i++){
                
@@ -35,6 +36,7 @@ public class Task11 {
           for(int i = 0; i < count; i++){
                System.out.print(new_arr[i] + " ");
           }
+          
           System.out.print("\nRemoved elements: " + remov);
           sc.close();
      }

@@ -31,7 +31,7 @@ public class Task4 {
                 }
                 
                 if(count > 1 && new_letter){
-                    System.out.println("\""+ current + "\"" + "has been counted " + count + " times in the word");
+                    System.out.println("\""+ current + "\" has been counted " + count + " times in the word " + "\"" + inp + "\"");
                     count = 1;
                 }
             }
