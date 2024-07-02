@@ -1,5 +1,4 @@
 //Array Task5
-//FIX
 import java.util.Scanner;
 public class Task11 {
      public static void main(String[] args) {
