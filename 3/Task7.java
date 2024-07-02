@@ -5,6 +5,7 @@ public class Task7 {
           Scanner sc = new Scanner(System.in);
           System.out.print("N = ");
           int N = sc.nextInt();
+          int len = N;
           int[] arr = new int[N];
           for(int i = 0; i < N; i++){
                arr[i] = sc.nextInt();
@@ -21,11 +22,12 @@ public class Task7 {
 
           for(int i = 0; i < N; i++){
                if(arr[i] == rem){
+                    len--;
                     found = true;
                }
           }
 
-          int[] new_arr = new int[N-1];
+          int[] new_arr = new int[len];
           if(found){
                
                for(int i = 0, j = 0; i < N; i++){
@@ -35,8 +37,8 @@ public class Task7 {
                     }
                }
                System.out.println("New array:");
-               for(int i = 0; i < N-1; i++){
-                    System.out.println(new_arr[i] + " ");
+               for(int i = 0; i < len; i++){
+                    System.out.print(new_arr[i] + " ");
                }
                System.out.println();
           }
