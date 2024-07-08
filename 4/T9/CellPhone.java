@@ -1,7 +1,6 @@
 public class CellPhone {
-     String[] contact = {"", "", ""};
+     String[] contact = {"", "", ""}; String model = "Unknown";
      int count = 0;
-     String model = "Unknown";
 
      public void printDetails(){
           System.out.println("Phone Model " + this.model);
