@@ -52,10 +52,6 @@ public class Task1 {
 
     my_num += my_num2;
     System.out.println(my_num);
-    sc.close();
-
-
-
-    
+    sc.close();  
   }  
 }
