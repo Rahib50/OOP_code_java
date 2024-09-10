@@ -44,13 +44,11 @@ class Course{
 
         boolean flag = false;
 
-        for(int i = 0; i < syll.length-1; i++){
+        for(int i = 0; i < syll.length; i++){
             if(!(syll[i] == " ")){
-                if(i==0){
-                    System.out.print(syll[i]);
-                }
-                else{
-                    System.out.print(", "+syll[i]);
+                System.out.print(syll[i]);
+                if(i < syll.length-1){
+                    System.out.print(", ");
                 }
                 
                 flag = true;
