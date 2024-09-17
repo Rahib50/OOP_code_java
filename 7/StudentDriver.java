@@ -27,7 +27,6 @@ public class StudentDriver {
 }
 
 //Task7
-
 class Student{
      private double cg;
      private int id;
@@ -143,6 +142,4 @@ class Student{
                System.out.println("No courses added.");
           }
      }
-     
-
 }
